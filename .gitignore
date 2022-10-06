@@ -1,0 +1,4 @@
+dags/__pycache__
+logs/dag_processor_manager/
+logs/scheduler/
+nohup.out
