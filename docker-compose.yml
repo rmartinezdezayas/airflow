@@ -22,7 +22,7 @@ services:
             - "8080:8080"
     scheduler:
         image: apache/airflow
-        command: scheduler
+        entrypoint: ./scripts/scheduler_entrypoint.sh
         depends_on:
             - postgres
             - webserver
@@ -31,3 +31,4 @@ services:
         volumes:
             - ./dags:/opt/airflow/dags
             - ./logs:/opt/airflow/logs
+            - ./scripts:/opt/airflow/scripts
