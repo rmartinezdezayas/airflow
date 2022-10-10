@@ -1,1 +1,2 @@
-hup sudo docker compose up >/dev/null 2>&1 &
+sudo service docker start
+nohup sudo docker compose up >/dev/null 2>&1 &
