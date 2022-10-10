@@ -1,3 +1,3 @@
-# !/usr/bin/env bash
+#!/usr/bin/env bash
 airflow db init
 airflow webserver
