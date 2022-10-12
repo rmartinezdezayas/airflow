@@ -18,6 +18,7 @@ services:
             - ./logs:/opt/airflow/logs
             - ./scripts:/opt/airflow/scripts
             - ./data:/opt/airflow/data
+            - ./plugins:/opt/airflow/plugins
         ports:
             - "8080:8080"
     scheduler:
@@ -33,3 +34,4 @@ services:
             - ./logs:/opt/airflow/logs
             - ./scripts:/opt/airflow/scripts
             - ./data:/opt/airflow/data
+            - ./plugins:/opt/airflow/plugins

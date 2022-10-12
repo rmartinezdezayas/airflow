@@ -1,8 +1,15 @@
 dags/*
 logs/*
 data/*
+scripts/*
+plugins/*
+plugins/operators/*
 nohup.out
 
 !dags/example_dag.py
 !logs/empty.log
 !data/empty_data_file.csv
+!scripts/scheduler_entrypoint.sh
+!scripts/webserver_entrypoint
+!plugins/operators
+!plugins/operators/__init__.py
